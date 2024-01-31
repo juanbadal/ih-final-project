@@ -3,17 +3,17 @@ import functions
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def main():
-    st.title('Why the long face?')
+    st.title('Why the long face?\u00A9')
 
     # Layout with two columns
     col1, col2 = st.columns([3, 1])
 
     with col1:
-        st.markdown('### Try our state of the art facial expression recognizer')
+        st.markdown('### Try our state of the art facial expression recognizer!')
         st.markdown('- Click on "Browse Files" or drag and drop an image\n- Wait a few seconds while the model processes de image\n- Enjoy your facial expression predictions!')
 
     with col2:
-        st.image('long-face.jpg', width=150)
+        st.image('juan-donkey.png', width=150)
 
     # Back to single column layout
     st.markdown("---")
@@ -39,11 +39,11 @@ def main():
         col1, col2 = st.columns([3, 1])
 
         with col1:
-            st.markdown('### Additional considerations')
-            st.markdown("- No picture has been used without consent\n- Please, don't vote my project for the Hackshow, I hate presenting!\n- Don't be a jackass")
+            st.markdown('#### Disclaimer:')
+            st.markdown("No picture has been used without explicit consent.")
 
-        with col2:
-            st.image('juan-donkey.png', width=150)
+        # with col2:
+        #     st.image('juan-donkey.png', width=150)
 
 if __name__ == "__main__":
     main()
